@@ -1,14 +1,15 @@
 {
   "name": "prisma-class-validator-generator",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Prisma 2+ generator to emit typescript models of your database with class validator",
-  "repository": "https://github.com/omar-dulaimi/prisma-class-validator-generator",
+  "repository": "https://github.com/austenstrine/prisma-class-validator-generator",
   "bin": {
     "prisma-class-validator-generator": "lib/generator.js"
   },
   "scripts": {
     "start": "tsc && npx prisma generate",
-    "package:publish": "./package.sh && cd package && npm publish"
+    "package:publish": "./package.sh && cd package && npm publish",
+    "postinstall": "yarn install"
   },
   "author": {
     "name": "Omar Dulaimi",
@@ -44,5 +45,5 @@
     "url": "https://github.com/omar-dulaimi/prisma-class-validator-generator/issues"
   },
   "homepage": "https://github.com/omar-dulaimi/prisma-class-validator-generator#readme",
-  "private": true
+  "private": false
 }
